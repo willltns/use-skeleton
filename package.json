@@ -1,0 +1,41 @@
+{
+	"name": "@ltns/use-skeleton",
+	"version": "0.0.1",
+	"description": "A React hook used to display skeleton placeholders where content needs to wait for loading.",
+	"keywords": ["react", "hook", "react-hook", "skeleton", "loading"],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/willltns/use-skeleton.git"
+	},
+	"bugs": {
+		"url": "https://github.com/willltns/use-skeleton/issues"
+	},
+	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./src/index.js",
+	"types": "./src/index.d.ts",
+	"exports": {
+		".": "./src/index.js"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"scripts": {
+		"build": "yarn build:clean && tsc --version && tsc",
+		"build:clean": "yarn rimraf -g ./src/**/*.js ./src/**/*.d.ts"
+	},
+	"peerDependencies": {
+		"react": "^16.8 || ^17 || ^18",
+		"react-dom": "^16.8 || ^17 || ^18"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.52",
+		"@types/react-dom": "^18.2.6",
+		"prettier": "^3.2.5",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.3.3"
+	}
+}

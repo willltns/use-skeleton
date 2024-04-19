@@ -1,0 +1,30 @@
+.skeleton {
+	position: relative;
+	background: var(--ltns-skeleton-bg, #fff) !important;
+	color: transparent !important;
+	user-select: none !important;
+	overflow: hidden !important;
+	cursor: default !important;
+}
+
+.skeleton::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -200%;
+	width: 200%;
+	height: 100%;
+	z-index: 999;
+	background: linear-gradient(90deg, var(--ltns-skeleton-bg, transparent) 0%, var(--ltns-skeleton-color, #aaa) 50%, var(--ltns-skeleton-bg, transparent) 100%);
+	animation: ltns-skeleton-animation 1200ms ease infinite;
+}
+
+@keyframes ltns-skeleton-animation {
+	0% {
+		transform: translate3d(0%, 0%, 0);
+	}
+	100% {
+		transform: translate3d(150%, 0%, 0);
+	}
+}
