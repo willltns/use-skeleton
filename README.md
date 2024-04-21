@@ -13,7 +13,7 @@ yarn add @ltns/use-skeleton
 ```tsx
 import useSkeleton from '@ltns/use-skeleton';
 
-const [ref, setAnimate, animate] = useSkeleton('& > div');
+const [ref, setAnimate, animate] = useSkeleton('& > *');
 
 return (
 	<div ref={ref}>
