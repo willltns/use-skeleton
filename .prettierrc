@@ -1,9 +1,0 @@
-{
-	"semi": true,
-	"tabWidth": 2,
-	"useTabs": true,
-	"maxLength": 100,
-	"endOfLine": "lf",
-	"singleQuote": true,
-	"trailingComma": "es5"
-}

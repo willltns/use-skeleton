@@ -1,6 +1,6 @@
 .skeleton {
 	position: relative;
-	background: var(--ltns-skeleton-bg, #fff) !important;
+	background: var(--ltns-skeleton-bg-color, #fff) !important;
 	color: transparent !important;
 	user-select: none !important;
 	overflow: hidden !important;
@@ -16,8 +16,15 @@
 	width: 200%;
 	height: 100%;
 	z-index: 999;
-	background: linear-gradient(90deg, var(--ltns-skeleton-bg, transparent) 0%, var(--ltns-skeleton-color, #aaa) 50%, var(--ltns-skeleton-bg, transparent) 100%);
-	animation: ltns-skeleton-animation 1200ms ease infinite;
+	background: linear-gradient(
+		90deg,
+		var(--ltns-skeleton-bg-color, #fff) 0%,
+		transparent 2%,
+		var(--ltns-skeleton-sk-color, #5ff) 50%,
+		transparent 98%,
+		var(--ltns-skeleton-bg-color, #fff) 100%
+	);
+	animation: ltns-skeleton-animation infinite var(--ltns-skeleton-anim-str, 1300ms ease);
 }
 
 @keyframes ltns-skeleton-animation {
