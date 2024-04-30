@@ -31,19 +31,36 @@
 	},
 	"scripts": {
 		"build": "yarn build:clean && tsc --version && tsc",
-		"build:clean": "yarn rimraf -g ./src/**/*.js ./src/**/*.d.ts"
+		"build:clean": "yarn rimraf -g ./src/**/*.js ./src/**/*.d.ts",
+		"cz": "git-cz",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@types/node": "^20.12.7",
+		"@types/react": "^18.2.52",
+		"@types/react-dom": "^18.2.6",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.3.3"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"@commitlint/cz-commitlint": "^19.2.0",
+		"commitizen": "^4.3.0",
+		"husky": "^9.0.11",
+		"inquirer": "^9.2.20",
+		"prettier": "^3.2.5"
 	},
 	"peerDependencies": {
 		"react": "^16.8 || ^17 || ^18",
 		"react-dom": "^16.8 || ^17 || ^18"
 	},
-	"devDependencies": {
-		"@types/node": "^20.12.7",
-		"@types/react": "^18.2.52",
-		"@types/react-dom": "^18.2.6",
-		"prettier": "^3.2.5",
-		"rimraf": "^5.0.5",
-		"typescript": "^5.3.3"
+	"resolutions": {
+		"string-width": "4.2.3"
 	},
-	"dependencies": {}
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/cz-commitlint"
+		}
+	}
 }
