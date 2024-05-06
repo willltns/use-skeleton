@@ -1,10 +1,21 @@
 .skeleton {
 	position: relative;
-	background: var(--ltns-skeleton-bg-color, #fff) !important;
 	color: transparent !important;
 	user-select: none !important;
 	overflow: hidden !important;
 	cursor: default !important;
+}
+
+.skeleton::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background: var(--ltns-skeleton-bg-color, #fff) !important;
 }
 
 .skeleton::after {

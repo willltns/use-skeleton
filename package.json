@@ -1,6 +1,6 @@
 {
 	"name": "@ltns/use-skeleton",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"description": "A React hook used to display skeleton placeholders where content needs to wait for loading.",
 	"keywords": [
 		"react",
