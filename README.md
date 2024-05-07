@@ -1,5 +1,9 @@
 `@ltns/use-skeleton` is a React hook used to display skeleton placeholders where content needs to wait for loading.
 
+
+https://github.com/willltns/use-skeleton/assets/35132956/da5932ed-0981-403c-ad07-d0e6d85a55ed
+
+
 ## Install
 
 ```shell
