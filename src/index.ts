@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useLayoutEffect, useState, useRef } from 'react';
 
 import styles from './index.module.css';
 
@@ -9,7 +9,7 @@ function useSkeleton<T extends HTMLElement>(selector: string = '*'): ReturnType<
 
 	const [animate, setAnimate] = useState<boolean>(true);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (!ref.current || !animate) return;
 
 		const nodeList: NodeListOf<HTMLElement> = ref.current.querySelectorAll(selector);

@@ -15,3 +15,9 @@
 ### Bug Fixes
 
 - use the `::before` pseudo-class element as the background of the skeleton element to cover child elements below.
+
+# 0.0.6 (2024-05-23)
+
+### Features
+
+- replace `useEffect` with `useLayoutEffect` to enable rendering to display the skeleton state synchronously.
